@@ -1,15 +1,8 @@
 This template was downloaded from https://github.com/OpenSourceEconomics/econ-project-templates/archive/v0.5.1.zip based on https://econ-project-templates.readthedocs.io/en/stable/getting_started.html
 
+You can manually run command:
+	cookiecutter https://github.com/bocdaz/template-economists-project
 
-.. image:: https://zenodo.org/badge/14557543.svg
-   :target: https://zenodo.org/badge/latestdoi/14557543
-
-.. image:: https://readthedocs.org/projects/econ-project-templates/badge/?version=stable
-    :target: https://econ-project-templates.readthedocs.io/en/stable/
-    :alt: Documentation Status
-
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/ambv/black
 
 Templates for Reproducible Research Projects in Economics
 ===========================================================
@@ -41,3 +34,4 @@ Former Contributors
 @philippmuller
 @julienschat
 @raholler
+
