@@ -1,0 +1,51 @@
+name: {{ cookiecutter.create_conda_environment_with_name }}
+channels:
+  - conda-forge
+  - plotly
+{% if cookiecutter.configure_running_r == 'y' %}
+  - r
+{% endif %}
+dependencies:
+  - conda-build
+  - ipykernel
+  - jupyterlab
+  - plotly>=5.5.0
+  - pandas
+  - pip
+  - pytask>=0.0.14
+  - pytask-latex>=0.0.12
+{% if cookiecutter.configure_running_r == 'y' %}
+  - pytask-r>=0.0.9
+{% endif %}
+{% if cookiecutter.configure_running_stata == 'y' %}
+  - pytask-stata>=0.0.6
+{% endif %}
+  - pytest
+  - pytest-cov
+  - python={{ cookiecutter.python_version }}
+  - python-graphviz
+{% if cookiecutter.configure_running_r == 'y' %}
+  - r-aer
+  - r-aod
+  - r-base
+  - r-car
+  - r-essentials
+  - r-rjson
+  - r-lmtest
+  - r-sandwich
+{% endif %}
+{% if cookiecutter.add_basic_pre_commit_hooks == 'y' %}
+  - virtualenv=20.0.33
+{% endif %}
+  - pip:
+{% if cookiecutter.add_basic_pre_commit_hooks == 'y' %}
+    - pre-commit
+{% endif %}
+    - kaleido
+    - sphinx
+    - sphinx-autobuild
+    - sphinx-rtd-theme
+    - sphinxcontrib-bibtex
+{% if cookiecutter.configure_running_matlab == 'y' %}
+    - sphinxcontrib-matlabdomain
+{% endif %}
