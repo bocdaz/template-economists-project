@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: {{ cookiecutter.hyphenated }}
+  title: {{ cookiecutter.project_name }}
+
+  description: {{ cookiecutter.description }}
+  annotations:
+    github.com/project-slug: {{ cookiecutter.hyphenated }}
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: {{ cookiecutter.author_name }}
+  lifecycle: experimental
