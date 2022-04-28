@@ -1,6 +1,6 @@
 This template was downloaded from https://github.com/OpenSourceEconomics/econ-project-templates/archive/v0.5.1.zip based on https://econ-project-templates.readthedocs.io/en/stable/getting_started.html
 
-You can manually run command:
+To start a new project, you can run command:
 	cookiecutter https://github.com/bocdaz/template-economists-project
 
 
