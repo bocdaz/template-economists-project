@@ -5,6 +5,7 @@
   "affiliation": "Swiss Patent Office",
   "project_name": "The General Theory of Relativity",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "hyphenated": "{{ '-'.join(cookiecutter['project_name'].lower().split()).replace('_', '-') }}",
   "project_short_description": "Explain the relationship of space and time.",
   "python_version": "3.9",
   "create_conda_environment_with_name": "{{ cookiecutter.project_slug.lower().replace(' ', '_').replace('-', '_') }}",
