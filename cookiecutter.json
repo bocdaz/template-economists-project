@@ -60,6 +60,7 @@
     "*.bib",
     "src_python/sandbox/few_agents.ipynb",
     "src_matlab/library/matlab-json/*",
-    "src_stata/library/stata/ado_ext/*"
+    "src_stata/library/stata/ado_ext/*", 
+    "*tests/*"
   ]
 }
