@@ -10,5 +10,5 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
-  owner: {{ cookiecutter.author_name }}
+  owner: {{ cookiecutter.author }}
   lifecycle: experimental
