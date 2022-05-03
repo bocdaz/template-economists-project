@@ -4,7 +4,7 @@ metadata:
   name: {{ cookiecutter.hyphenated }}
   title: {{ cookiecutter.project_name }}
 
-  description: {{ cookiecutter.description }}
+  description: {{ cookiecutter.project_short_description }}
   annotations:
     github.com/project-slug: {{ cookiecutter.hyphenated }}
     backstage.io/techdocs-ref: dir:.
